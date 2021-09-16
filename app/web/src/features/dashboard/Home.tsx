@@ -48,6 +48,7 @@ import DashboardBanners from "features/dashboard/DashboardBanners";
 import { useState } from "react";
 
 import CommunitiesList from "./CommunitiesList";
+import UpcomingEvents from "./UpcomingEvents";
 
 const useStyles = makeStyles((theme) => ({
   button: { display: "block", marginTop: theme.spacing(1) },
@@ -129,6 +130,8 @@ export default function Home() {
       >
         {COMMUNITY_BUILDER_FORM_TEXT}
       </Button>
+
+      <UpcomingEvents />
 
       <Accordion className={classes.accordion}>
         <AccordionSummary
